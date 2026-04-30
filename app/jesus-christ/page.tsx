@@ -8,7 +8,7 @@ export default function JesusChristPage() {
       subcategories={[
         {
           title: "Who Jesus Christ Is",
-          description: "What Scripture reveals about the identity of Jesus Christ—His claims, His works, and why He is Lord, Savior, and God in the flesh.",
+          description: "An exploration of who Jesus Christ is—what He said, what He did, and the evidence behind the claims about Him.",
           href: "/jesus-christ/who-jesus-christ-is"
         },
         {
