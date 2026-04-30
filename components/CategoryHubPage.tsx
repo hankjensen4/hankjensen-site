@@ -13,21 +13,12 @@ type CategoryHubPageProps = {
 };
 
 export default function CategoryHubPage({
-  title,
   description,
   subcategories
 }: CategoryHubPageProps) {
   return (
-    <main className="mx-auto max-w-4xl px-4 pb-12 pt-6 sm:px-6 lg:px-8">
-      <nav className="text-center text-sm text-slate-600">
-        <Link href="/" className="hover:text-slate-900">
-          Home
-        </Link>
-        <span className="mx-2">&gt;</span>
-        <span className="text-slate-900">{title}</span>
-      </nav>
-
-      <section className="mt-6 grid grid-cols-1 gap-6">
+    <main className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
+      <section className="grid grid-cols-1 gap-6">
         {subcategories.map((item) => (
           <Link
             key={item.href}
