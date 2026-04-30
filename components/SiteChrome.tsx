@@ -8,7 +8,8 @@ type SiteChromeProps = {
 };
 
 const labelMap: Record<string, string> = {
-  jesus: "Jesus",
+  jesus: "Jesus Christ",
+  "jesus-christ": "Jesus Christ",
   "love-and-truth": "Love and Truth",
   "logic-and-reason": "Logic and Reason",
   "creation-vs-evolution": "Creation vs Evolution",
@@ -42,7 +43,7 @@ export default function SiteChrome({ children }: SiteChromeProps) {
   return (
     <div className="flex min-h-screen flex-col">
       <header className="border-b border-slate-200 bg-white">
-        <div className="mx-auto max-w-6xl px-4 py-5 text-center sm:px-6 lg:px-8">
+        <div className="site-header-inner mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           {isHome ? (
             <Link href="/" className="text-xl font-bold tracking-tight text-slate-900 sm:text-2xl">
               hankjensen.com
@@ -56,7 +57,7 @@ export default function SiteChrome({ children }: SiteChromeProps) {
                 <span key={`${crumb.href}-${crumb.label}`}>
                   <span className="mx-2">&gt;</span>
                   {crumb.isLast ? (
-                    <span className="text-slate-900">{crumb.label}</span>
+                    <span className="font-semibold text-slate-900">{crumb.label}</span>
                   ) : (
                     <Link href={crumb.href} className="hover:text-slate-900">
                       {crumb.label}

@@ -10,7 +10,7 @@ export default function PlaceholderPage({
   subtopics
 }: PlaceholderPageProps) {
   return (
-    <main className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
+    <main className="page-main max-w-6xl">
       <section className="rounded-xl border border-slate-200 bg-white p-8 sm:p-10">
         <h1 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">{title}</h1>
         <p className="mt-3 text-lg text-slate-700">{description}</p>

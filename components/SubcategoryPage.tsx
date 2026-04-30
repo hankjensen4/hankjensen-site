@@ -12,7 +12,7 @@ export default function SubcategoryPage({
   points
 }: SubcategoryPageProps) {
   return (
-    <main className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
+    <main className="page-main max-w-4xl">
       <section className="rounded-xl border border-slate-200 bg-white p-8 sm:p-10">
         <h1 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">{currentTitle}</h1>
         <p className="mt-4 text-slate-700">{description}</p>

@@ -17,7 +17,7 @@ export default function CategoryHubPage({
   subcategories
 }: CategoryHubPageProps) {
   return (
-    <main className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
+    <main className="page-main max-w-4xl">
       <section className="grid grid-cols-1 gap-6">
         {subcategories.map((item) => (
           <Link
